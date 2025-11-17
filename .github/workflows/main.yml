@@ -27,6 +27,13 @@ jobs:
 
       # Step 4: upload ZIP to the release (if triggered by release)
       - name: Upload ZIP to release
+
+      - name: Upload ZIP as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: tip-product-countdown
+          path: tip-product-countdown.zip
+
         if: github.event_name == 'release'
         uses: softprops/action-gh-release@v1
         with:

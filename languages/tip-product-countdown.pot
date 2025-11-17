@@ -1,0 +1,78 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WIP\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-17 15:05+0100\n"
+"PO-Revision-Date: 2015-02-05 17:47+0100\n"
+"Last-Translator: Alessandro Vellutini <vellutini@hotmail.it>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e;esc_html__;esc_attr__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: core/includes/class-notice.php:100
+msgid "Dismiss this notice"
+msgstr ""
+
+#: tip-product-countdown.php:128
+msgid "TIP Product Countdown: WooCommerce is required for this plugin to work properly."
+msgstr ""
+
+#: tip-product-countdown.php:139
+msgid "Pro version"
+msgstr ""
+
+#: tip-product-countdown.php:150 tip-product-countdown.php:151
+msgid "TIP Product Countdown"
+msgstr ""
+
+#: tip-product-countdown.php:255
+msgid "This offer has expired"
+msgstr ""
+
+#: tip-product-countdown.php:291
+msgid "Countdown"
+msgstr ""
+
+#: tip-product-countdown.php:319
+msgid "Enable countdown"
+msgstr ""
+
+#: tip-product-countdown.php:320
+msgid "Would you like to enable the countdown for this product?."
+msgstr ""
+
+#: tip-product-countdown.php:326
+msgid "Countdown end"
+msgstr ""
+
+#: tip-product-countdown.php:327
+msgid "Select the end date and time for the offer"
+msgstr ""
+
+#: tip-product-countdown.php:402
+msgid "Days"
+msgstr ""
+
+#: tip-product-countdown.php:406
+msgid "Hours"
+msgstr ""
+
+#: tip-product-countdown.php:410
+msgid "Minutes"
+msgstr ""
+
+#: tip-product-countdown.php:414
+msgid "Seconds"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Categories: "
+#~ msgstr "Categorisa"

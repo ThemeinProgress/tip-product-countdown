@@ -1,0 +1,109 @@
+.tip_product_countdown_wrap {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin: 20px 0;
+	container-name: tip_product_countdown;
+	container-type: inline-size;
+}
+
+.tip_product_countdown {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  gap:5px;
+}
+
+.tip_product_countdown_item {
+  flex: 1;
+  max-width: 70px;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.tip_product_countdown_number {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.tip_product_countdown_label {
+  display: block;
+  font-size: 10px;
+  color: #666;
+}
+
+.tip_product_countdown_layout_1 .tip_product_countdown_item {
+  background: #f1f1f1;
+}
+
+.tip_product_countdown_layout_2 .tip_product_countdown_item {
+  background: #fff;
+  border: solid 1px #ccc;
+}
+
+.tip_product_countdown_layout_3 .tip_product_countdown_item {
+  text-align: left;
+  background: none;
+  padding: 10px 0;
+}
+
+.tip_product_countdown_layout_4 .tip_product_countdown_item {
+  background: #fff;
+  border: solid 1px #ccc;
+  border-radius: 0;
+}
+
+.tip_product_countdown_layout_5 .tip_product_countdown_item {
+  background: none;
+  border-radius: 0;
+  padding: 10px 0;
+}
+
+.tip_product_countdown_layout_5 .tip_product_countdown_item .tip_product_countdown_number {
+  background: #fff;
+  border: solid 1px #ccc;
+}
+
+.tip_product_countdown_layout_5 .tip_product_countdown_item .tip_product_countdown_label {
+  font-weight: bold;
+  color: #000;
+}
+
+@container tip_product_countdown (width < 300px) {
+
+  .tip_product_countdown_item {
+    width: 100%;
+    max-width: 100px;
+    padding: 5px;
+  }
+
+  .tip_product_countdown_number {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .tip_product_countdown_label {
+    display: block;
+    font-size: 8px;
+    color: #666;
+  }
+
+}
+
+@container tip_product_countdown (width < 120px) {
+
+  .tip_product_countdown {
+    flex-direction: column;
+  }
+
+  .tip_product_countdown_item {
+    max-width: 60px;
+  }
+
+}

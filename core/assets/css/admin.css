@@ -1,0 +1,5 @@
+#woocommerce-product-data ul.wc-tabs li.tip_product_countdown_tab  a::before {
+    font-family: Dashicons;
+    content: "\f469";
+    display: inline-block;
+}

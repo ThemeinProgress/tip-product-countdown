@@ -3,25 +3,31 @@ name: Build Plugin ZIP
 on:
   release:
     types: [published]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: checkout the repository
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Step 2: create plugin folder (exclude unnecessary files)
       - name: Create plugin folder
         run: |
           mkdir tip-product-countdown
           rsync -av --exclude='.git' --exclude='.github' --exclude='*.md' ./ tip-product-countdown/
 
+      # Step 3: create the ZIP file
       - name: Create ZIP
         run: |
           zip -r tip-product-countdown.zip tip-product-countdown
 
+      # Step 4: upload ZIP to the release (if triggered by release)
       - name: Upload ZIP to release
+        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v1
         with:
           files: tip-product-countdown.zip

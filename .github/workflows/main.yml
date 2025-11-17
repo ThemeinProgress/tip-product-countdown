@@ -25,7 +25,7 @@ jobs:
         run: |
           zip -r tip-product-countdown.zip tip-product-countdown
 
-      # Step 4: upload ZIP to the release (only if triggered by release)
+      # Step 4: upload ZIP to the release (if triggered by release)
       - name: Upload ZIP to release
         if: github.event_name == 'release'
         uses: softprops/action-gh-release@v1
